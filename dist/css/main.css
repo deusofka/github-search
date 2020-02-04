@@ -1,0 +1,96 @@
+body main div#repos h2, body main div#repos div.repo, body footer, body header div.wrapper div#search {
+  display: flex;
+  align-items: center; }
+
+body main div#repos h2, body main div#repos div.repo, body footer {
+  justify-content: center; }
+
+body header div.wrapper div#search input {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.1rem; }
+
+body header div.wrapper, body main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem; }
+
+body header div.wrapper, body main, body main div#repos {
+  display: grid;
+  grid-template-columns: auto auto; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.1rem; }
+  body header {
+    border-bottom: 1.5px solid #c1c1c1; }
+    body header div.wrapper {
+      justify-content: space-between;
+      margin-bottom: 1.25rem; }
+      body header div.wrapper h1 {
+        font-size: 3rem;
+        font-family: "UnifrakturMaguntia", cursive;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 3; }
+      body header div.wrapper h2 {
+        font-size: 1.5rem; }
+      body header div.wrapper div#search i {
+        position: absolute;
+        padding-left: 0.5rem; }
+      body header div.wrapper div#search input {
+        width: 15rem;
+        padding: 0.3rem;
+        padding-left: 1.75rem;
+        border: 1.5px solid #c1c1c1; }
+  body main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1.33rem; }
+    body main div#user div#image {
+      width: 250px;
+      height: 250px;
+      background-image: url("../img/profile.png");
+      background-position: center;
+      background-size: cover; }
+    body main div#user p#name,
+    body main div#user div#company,
+    body main div#user div#location,
+    body main div#user div#calendar {
+      margin-top: 0.75rem;
+      display: flex; }
+      body main div#user p#name i,
+      body main div#user div#company i,
+      body main div#user div#location i,
+      body main div#user div#calendar i {
+        margin-top: 0.1rem;
+        margin-right: 0.75rem; }
+    body main div#user a {
+      margin-top: 0.5rem;
+      display: inline-block; }
+    body main div#repos {
+      grid-gap: 1rem;
+      border: 1.5px solid #c1c1c1;
+      padding: 1rem; }
+      body main div#repos h2 {
+        grid-column-start: 1;
+        grid-column-end: 3; }
+      body main div#repos div.repo {
+        border: 1.5px solid #c1c1c1; }
+  body footer {
+    width: 100%;
+    background-color: white;
+    padding: 0.75rem;
+    position: sticky;
+    bottom: 0;
+    border-top: 1.5px solid #c1c1c1;
+    font-family: "UnifrakturMaguntia", cursive; }

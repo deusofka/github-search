@@ -1,0 +1,16 @@
+{
+  "name": "7.9.githubfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "sass": "npx node-sass --watch scss/ -o dist/css"
+  },
+  "keywords": [],
+  "author": "Vimal Patel",
+  "license": "ISC"
+}

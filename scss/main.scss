@@ -1,0 +1,150 @@
+$text-color: #333333;
+$border-color: #c1c1c1;
+$search-color: #b1b1b1;
+$link-color: #003bff;
+
+$heading-l: 3rem;
+$heading-m: 1.5rem;
+$text-m: 1.1rem;
+
+$border: 1.5px solid $border-color;
+
+%vertical-box {
+  display: flex;
+  align-items: center;
+}
+
+%center-box {
+  @extend %vertical-box;
+  justify-content: center;
+}
+
+%text-font {
+  font-family: "Dosis", sans-serif;
+  font-size: $text-m;
+}
+
+%content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+%grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: $text-m;
+  header {
+    border-bottom: $border;
+
+    div.wrapper {
+      @extend %content;
+      @extend %grid;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+
+      h1 {
+        font-size: $heading-l;
+        font-family: "UnifrakturMaguntia", cursive;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      h2 {
+        font-size: $heading-m;
+      }
+      div#search {
+        @extend %vertical-box;
+        i {
+          position: absolute;
+          padding-left: 0.5rem;
+          // color: $search-color;
+        }
+        input {
+          width: 15rem;
+          padding: 0.3rem;
+          padding-left: 1.75rem;
+          border: $border;
+          @extend %text-font;
+        }
+      }
+    }
+  }
+
+  main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @extend %content;
+    @extend %grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1.33rem;
+    div#user {
+      div#image {
+        width: 250px;
+        height: 250px;
+        background-image: url("../img/profile.png");
+        background-position: center;
+        background-size: cover;
+      }
+      p#name,
+      div#company,
+      div#location,
+      div#calendar {
+        margin-top: 0.75rem;
+        display: flex;
+        i {
+          margin-top: 0.1rem;
+          margin-right: 0.75rem;
+        }
+      }
+      a {
+        margin-top: 0.5rem;
+        display: inline-block;
+      }
+    }
+
+    div#repos {
+      @extend %grid;
+      grid-gap: 1rem;
+      border: $border;
+      padding: 1rem;
+
+      h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @extend %center-box;
+        // margin: 0;
+      }
+      div.repo {
+        @extend %center-box;
+        border: $border;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    @extend %center-box;
+    background-color: white;
+    padding: 0.75rem;
+    position: sticky;
+    bottom: 0;
+    border-top: $border;
+    font-family: "UnifrakturMaguntia", cursive;
+  }
+}
