@@ -1,43 +1,27 @@
+let client_id = "9e687aeb019288c2780d";
+let client_secret = "a763ee15172003002f3b26f5124d74b05e12e2b8";
+let repos_count = 6;
+let repos_sort = "created: asc";
+
 handleError = res => {
   if (!res.ok) throw new Error("Error occured" + res.status);
 };
 
-setupConnection = name => {
-  return {
-    method: "POST",
-    headers: {
-      "Content-type": "application/json",
-      Authorization: "bearer d23d3a9abfdf595b5eed17ef37d6659a9be943a0"
-    },
-    body: JSON.stringify({
-      query: `
-      query { 
-        user(login: \"${name}\") { 
-          avatarUrl,
-          login,
-          websiteUrl,
-          company, 
-          location,
-          createdAt,
-          repositories(first:6, orderBy: {field: CREATED_AT, direction: DESC}) {
-            edges {
-              node {
-                name,
-                url,
-                createdAt
-              }
-            }
-          }
-        }
-      }`
-    })
-  };
-};
-
 class EasyHttp {
   getProfile = async (url, name) => {
-    let res = await fetch(url, setupConnection(name));
-    handleError(res);
-    return res.json();
+    let profileRes = await fetch(
+      `https://api.github.com/users/${name}?client_id=${client_id}&client_secret=${client_secret}`
+    );
+    handleError(profileRes);
+    let profile = await profileRes.json();
+    let reposRes = await fetch(
+      `https://api.github.com/users/${name}/repos?per_page=${repos_count}&sort=${repos_sort}&client_id=${client_id}&client_secret=${client_secret}`
+    );
+    handleError(reposRes);
+    let repos = await reposRes.json();
+    return {
+      profile,
+      repos
+    };
   };
 }

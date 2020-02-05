@@ -16,6 +16,7 @@ body {
 
   main {
     &.show {
+      @extend %vertical-box;
     }
     div#user {
       div#image {
