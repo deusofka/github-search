@@ -11,7 +11,7 @@ inputDom.addEventListener("keyup", e => {
     return;
   }
   http
-    .getProfile("https://api.github.com/graphql", input)
+    .getProfile(input)
     .then(profile => {
       ui.setProfile(profile);
     })

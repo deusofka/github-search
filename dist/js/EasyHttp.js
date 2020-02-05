@@ -8,7 +8,7 @@ handleError = res => {
 };
 
 class EasyHttp {
-  getProfile = async (url, name) => {
+  getProfile = async (name) => {
     let profileRes = await fetch(
       `https://api.github.com/users/${name}?client_id=${client_id}&client_secret=${client_secret}`
     );
