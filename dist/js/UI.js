@@ -19,8 +19,14 @@ class UI {
     let user = profile.profile;
     avatar.style.backgroundImage = `url(${user.avatar_url})`;
     login.innerHTML = user.login;
-    websiteUrl.innerHTML = user.blog;
-    websiteUrl.href = user.blog;
+    let url = user.blog;
+    websiteUrl.innerHTML = url;
+    let http = /^http:\/\//;
+    let https = /^https:\/\//;
+    if (!(http.test(url) || https.test(url))) {
+      url = "http://" + url;
+    }
+    websiteUrl.href = url;
     company.innerHTML = user.company;
     location.innerHTML = user.location;
     createdAt.innerHTML = user.created_at;
