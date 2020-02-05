@@ -2,7 +2,7 @@ let main = document.querySelector("main");
 
 class UI {
   clearProfile = () => {
-    main.style.display = "none";
+    main.className = "hide";
   };
 
   setProfile = profile => {
@@ -17,7 +17,6 @@ class UI {
     let repos = document.querySelector("div#repos");
     // Populate profile details
     let user = profile.profile;
-
     avatar.style.backgroundImage = `url(${user.avatar_url})`;
     login.innerHTML = user.login;
     websiteUrl.innerHTML = user.blog;

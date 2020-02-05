@@ -60,6 +60,8 @@ body {
     margin-bottom: 2rem;
     grid-template-columns: auto 1fr;
     grid-gap: 1.33rem; }
+    body main.hide {
+      display: none; }
     body main div#user div#image {
       width: 250px;
       height: 250px;

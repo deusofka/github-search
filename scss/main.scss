@@ -60,6 +60,9 @@ body {
     &.show {
       @extend %grid;
     }
+    &.hide {
+      display: none;
+    }
     grid-template-columns: auto 1fr;
     grid-gap: 1.33rem;
     div#user {

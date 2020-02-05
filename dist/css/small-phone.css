@@ -1,4 +1,4 @@
-body main div#user, body main div#repos {
+body main.show, body main div#user, body main div#repos {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -8,6 +8,9 @@ body header div.wrapper h1 {
 
 body header div.wrapper div#search input.small-mobile {
   width: 90vw; }
+
+body main.hide {
+  display: none; }
 
 body main div#user {
   align-items: center; }

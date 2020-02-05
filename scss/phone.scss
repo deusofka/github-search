@@ -18,6 +18,9 @@ body {
     &.show {
       @extend %vertical-box;
     }
+    &.hide {
+      display: none;
+    }
     div#user {
       div#image {
       }

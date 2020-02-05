@@ -11,6 +11,9 @@ body header div.wrapper div#search {
   body header div.wrapper div#search input {
     width: 28.3rem; }
 
+body main.hide {
+  display: none; }
+
 body main div#user div#user-box {
   flex-direction: row; }
   body main div#user div#user-box div#image {

@@ -1,7 +1,10 @@
-body main div#repos {
+body main.show, body main div#repos {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+body main.hide {
+  display: none; }
 
 body main div#repos div.repo {
   margin-top: 1rem; }
