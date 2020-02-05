@@ -43,7 +43,8 @@ body {
         grid-column-start: 1;
         grid-column-end: 3; }
       body header div.wrapper h2 {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        font-weight: normal; }
       body header div.wrapper div#search i {
         position: absolute;
         padding-left: 0.5rem; }
@@ -85,7 +86,8 @@ body {
       padding: 1rem; }
       body main div#repos h2 {
         grid-column-start: 1;
-        grid-column-end: 3; }
+        grid-column-end: 3;
+        font-weight: normal; }
       body main div#repos div.repo {
         border: 1.5px solid #c1c1c1; }
   body footer {

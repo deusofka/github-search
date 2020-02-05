@@ -32,13 +32,13 @@ body {
       }
       h2 {
         font-size: $heading-m;
+        font-weight: normal;
       }
       div#search {
         @extend %vertical-box;
         i {
           position: absolute;
           padding-left: 0.5rem;
-          // color: $search-color;
         }
         input {
           width: 15rem;
@@ -96,7 +96,7 @@ body {
         grid-column-start: 1;
         grid-column-end: 3;
         @extend %center-box;
-        // margin: 0;
+        font-weight: normal;
       }
       div.repo {
         @extend %center-box;
