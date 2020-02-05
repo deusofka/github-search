@@ -7,7 +7,7 @@ setupConnection = name => {
     method: "POST",
     headers: {
       "Content-type": "application/json",
-      Authorization: "bearer b6ffc3d89b3dc52241858db8a9dadb0db4064cf5"
+      Authorization: "bearer 28e47721b8815fec6c7a6884658b6ad1f6ce305b"
     },
     body: JSON.stringify({
       query: `
