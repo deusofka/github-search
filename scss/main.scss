@@ -87,6 +87,7 @@ body {
   }
 
   main {
+    display: none;
     margin-top: 2rem;
     margin-bottom: 2rem;
     @extend %content;
@@ -104,7 +105,7 @@ body {
       p#name,
       div#company,
       div#location,
-      div#calendar {
+      div#joined {
         margin-top: 0.75rem;
         display: flex;
         i {

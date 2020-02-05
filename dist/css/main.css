@@ -52,6 +52,7 @@ body {
         padding-left: 1.75rem;
         border: 1.5px solid #c1c1c1; }
   body main {
+    display: none;
     margin-top: 2rem;
     margin-bottom: 2rem;
     grid-template-columns: auto 1fr;
@@ -65,13 +66,13 @@ body {
     body main div#user p#name,
     body main div#user div#company,
     body main div#user div#location,
-    body main div#user div#calendar {
+    body main div#user div#joined {
       margin-top: 0.75rem;
       display: flex; }
       body main div#user p#name i,
       body main div#user div#company i,
       body main div#user div#location i,
-      body main div#user div#calendar i {
+      body main div#user div#joined i {
         margin-top: 0.1rem;
         margin-right: 0.75rem; }
     body main div#user a {
