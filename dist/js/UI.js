@@ -20,6 +20,7 @@ class UI {
     avatar.style.backgroundImage = `url(${user.avatar_url})`;
     login.innerHTML = user.login;
     websiteUrl.innerHTML = user.blog;
+    websiteUrl.href = user.blog;
     company.innerHTML = user.company;
     location.innerHTML = user.location;
     createdAt.innerHTML = user.created_at;
