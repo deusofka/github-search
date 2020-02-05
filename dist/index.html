@@ -15,6 +15,21 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width:900px)"
+      href="css/large.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width:600px)"
+      href="css/phone.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width:500px)"
+      href="css/small-phone.css"
+    />
   </head>
   <body>
     <!-- 
@@ -25,7 +40,9 @@
     <header>
       <div class="wrapper">
         <h1>Github Finder</h1>
-        <h2>Enter a username to fetch a user profile and repos</h2>
+        <h2 id="subheading">
+          Enter a username to fetch a user profile and repos
+        </h2>
         <div id="search">
           <i class="fas fa-search"></i>
           <input type="text" />
@@ -40,42 +57,51 @@
     <main>
       <!-- User -->
       <div id="user">
-        <div id="image"></div>
-        <p id="name">Vimal Patel</p>
-        <a id="website" href="https://www.vimalpa.tel">www.vimalpa.tel</a>
-        <div id="company">
-          <i class="fas fa-briefcase"> </i>
-          <p>null</p>
-        </div>
-        <div id="location">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>Space</p>
-        </div>
-        <div id="joined">
-          <i class="far fa-calendar-alt"></i>
-          <p>2019-11-12</p>
+        <div id="user-box">
+          <div id="image-box">
+            <div id="image"></div>
+          </div>
+          <div id="text">
+            <p id="name">Vimal Patel</p>
+            <a id="website" href="https://www.vimalpa.tel">www.vimalpa.tel</a>
+            <div id="company">
+              <i class="fas fa-briefcase"> </i>
+              <p>null</p>
+            </div>
+            <div id="location">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Space</p>
+            </div>
+            <div id="joined">
+              <i class="far fa-calendar-alt"></i>
+              <p>2019-11-12</p>
+            </div>
+          </div>
         </div>
       </div>
+
       <!-- Repositories -->
       <div id="repos">
-        <h2>Latest Repos</h2>
-        <div class="repo">
-          <a href="">chuck-norris-joke-generator </a>
-        </div>
-        <div class="repo">
-          <a href="">chuck-norris-joke-generator </a>
-        </div>
-        <div class="repo">
-          <a href="">chuck-norris-joke-generator </a>
-        </div>
-        <div class="repo">
-          <a href="">chuck-norris-joke-generator </a>
-        </div>
-        <div class="repo">
-          <a href="">chuck-norris-joke-generator </a>
-        </div>
-        <div class="repo">
-          <a href="">chuck-norris-joke-generator </a>
+        <div id="repos-box">
+          <h2>Latest Repos</h2>
+          <div class="repo">
+            <a href="">chuck-norris-joke-generator </a>
+          </div>
+          <div class="repo">
+            <a href="">chuck-norris-joke-generator </a>
+          </div>
+          <div class="repo">
+            <a href="">chuck-norris-joke-generator </a>
+          </div>
+          <div class="repo">
+            <a href="">chuck-norris-joke-generator </a>
+          </div>
+          <div class="repo">
+            <a href="">chuck-norris-joke-generator </a>
+          </div>
+          <div class="repo">
+            <a href="">chuck-norris-joke-generator </a>
+          </div>
         </div>
       </div>
     </main>

@@ -1,0 +1,28 @@
+@import "variables";
+
+%vertical-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+%center-box {
+  @extend %vertical-box;
+  align-items: center;
+}
+
+%text-font {
+  font-family: "Dosis", sans-serif;
+  font-size: $text-m;
+}
+
+%content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+%grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}

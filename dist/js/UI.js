@@ -6,7 +6,7 @@ class UI {
   };
 
   setProfile = profile => {
-    main.style.display = "grid";
+    main.className = "show";
     let avatar = document.querySelector("div#image");
     let login = document.querySelector("p#name");
     let websiteUrl = document.querySelector("a#website");

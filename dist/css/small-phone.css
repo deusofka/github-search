@@ -1,0 +1,23 @@
+body main div#user, body main div#repos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+body header div.wrapper h1 {
+  margin-bottom: 1rem; }
+
+body header div.wrapper div#search input.small-mobile {
+  width: 90vw; }
+
+body main div#user {
+  align-items: center; }
+  body main div#user div#user-box {
+    flex-direction: column;
+    align-items: start; }
+    body main div#user div#user-box div#image-box div#image {
+      width: 90vw;
+      height: 90vw;
+      margin: 0; }
+
+body main div#repos div.repo {
+  margin-top: 1rem; }

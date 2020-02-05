@@ -1,9 +1,10 @@
 body main div#repos h2, body main div#repos div.repo, body footer, body header div.wrapper div#search {
   display: flex;
-  align-items: center; }
+  flex-direction: column;
+  justify-content: center; }
 
 body main div#repos h2, body main div#repos div.repo, body footer {
-  justify-content: center; }
+  align-items: center; }
 
 body header div.wrapper div#search input {
   font-family: "Dosis", sans-serif;
@@ -14,7 +15,7 @@ body header div.wrapper, body main {
   margin: auto;
   padding: 0 1rem; }
 
-body header div.wrapper, body main, body main div#repos {
+body header div.wrapper, body main.show, body main div#repos {
   display: grid;
   grid-template-columns: auto auto; }
 
@@ -50,7 +51,8 @@ body {
         width: 15rem;
         padding: 0.3rem;
         padding-left: 1.75rem;
-        border: 1.5px solid #c1c1c1; }
+        border: 1.5px solid #c1c1c1;
+        outline: none; }
   body main {
     display: none;
     margin-top: 2rem;
@@ -60,7 +62,6 @@ body {
     body main div#user div#image {
       width: 250px;
       height: 250px;
-      background-image: url("../img/profile.png");
       background-position: center;
       background-size: cover; }
     body main div#user p#name,

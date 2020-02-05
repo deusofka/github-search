@@ -1,0 +1,22 @@
+body header div.wrapper, body main div#user div#user-box, body main.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+body header div.wrapper, body main div#user div#user-box {
+  align-items: center; }
+
+body header div.wrapper div#search {
+  margin-top: 1rem; }
+  body header div.wrapper div#search input {
+    width: 28.3rem; }
+
+body main div#user div#user-box {
+  flex-direction: row; }
+  body main div#user div#user-box div#image {
+    margin-right: 1rem; }
+
+body main div#repos {
+  margin-top: 1rem; }
+  body main div#repos div.repo {
+    padding: 1rem 0; }

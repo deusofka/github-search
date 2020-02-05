@@ -1,0 +1,46 @@
+@import "extends";
+
+body {
+  header {
+    div.wrapper {
+      h2 {
+      }
+      div#search {
+        i {
+        }
+        input {
+        }
+      }
+    }
+  }
+
+  main {
+    &.show {
+    }
+    div#user {
+      div#image {
+      }
+      p#name,
+      div#company,
+      div#location,
+      div#joined {
+        i {
+        }
+      }
+      a {
+      }
+    }
+
+    div#repos {
+      @extend %vertical-box;
+      h2 {
+      }
+      div.repo {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  footer {
+  }
+}
