@@ -1,6 +1,10 @@
 let main = document.querySelector("main");
 
 class UI {
+  clearProfile = () => {
+    main.style.display = "none";
+  };
+
   setProfile = profile => {
     main.style.display = "grid";
     let avatar = document.querySelector("div#image");
